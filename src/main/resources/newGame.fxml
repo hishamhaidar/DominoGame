@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="211.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dominogame.controller.NewGameController">
+   <children>
+      <Label layoutX="38.0" layoutY="38.0" prefHeight="22.0" prefWidth="81.0" text="player1 name:" />
+      <Label layoutX="38.0" layoutY="88.0" prefHeight="22.0" prefWidth="81.0" text="player2 name:" />
+      <TextField fx:id="player1Name" layoutX="128.0" layoutY="37.0" />
+      <TextField fx:id="player2Name" layoutX="128.0" layoutY="86.0" />
+      <Button layoutX="159.0" layoutY="138.0" mnemonicParsing="false" onAction="#startGame" prefHeight="25.0" prefWidth="76.0" text="start" />
+      <Button layoutX="159.0" layoutY="173.0" mnemonicParsing="false" onAction="#backToMainMenu" text="main menu" />
+   </children>
+</AnchorPane>

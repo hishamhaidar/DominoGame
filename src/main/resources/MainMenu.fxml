@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dominogame.controller.MainMenuController">
+   <children>
+      <Button layoutX="320.0" layoutY="174.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="25.0" prefWidth="108.0" text="new game" />
+      <Button layoutX="320.0" layoutY="228.0" mnemonicParsing="false" onAction="#displayLeaderboard" prefHeight="25.0" prefWidth="108.0" text="Leaderboard" />
+      <Button layoutX="320.0" layoutY="279.0" mnemonicParsing="false" onAction="#quit" prefHeight="25.0" prefWidth="108.0" text="Quit" />
+      <ImageView fitHeight="203.0" fitWidth="241.0" layoutX="75.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/menuImg.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="147.0" layoutY="67.0" prefHeight="58.0" prefWidth="306.0" text="Welcome to Domino Game !" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.29466667771339417" blue="0.07999999821186066" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7105262875556946" green="0.16578947007656097" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
